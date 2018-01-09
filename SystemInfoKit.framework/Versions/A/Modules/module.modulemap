@@ -1,0 +1,6 @@
+framework module SystemInfoKit {
+  umbrella header "SystemInfoKit.h"
+
+  export *
+  module * { export * }
+}

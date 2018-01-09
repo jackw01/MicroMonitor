@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MMPreferencesWindowController">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="MicroMonitor Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="460" height="155"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <value key="minSize" type="size" width="460" height="410"/>
+            <value key="maxSize" type="size" width="460" height="410"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Toh-OX-gGR">
+                        <rect key="frame" x="18" y="118" width="117" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Update frequency:" id="TiG-ET-jUk">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nIa-s3-GD4">
+                        <rect key="frame" x="18" y="70" width="36" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="oFD-KD-Z3w"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1 sec." id="EEo-K9-Jvd">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xa7-CN-vtQ">
+                        <rect key="frame" x="406" y="78" width="36" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="8Mt-GK-uNH"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="5 sec." id="7WW-nC-BN3">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sxt-KV-Y8G">
+                        <rect key="frame" x="372" y="14" width="70" height="24"/>
+                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="QZq-GX-OaN">
+                            <font key="font" metaFont="system"/>
+                            <segments>
+                                <segment label="℃" width="32" selected="YES"/>
+                                <segment label="℉" width="32" tag="1"/>
+                            </segments>
+                        </segmentedCell>
+                        <connections>
+                            <binding destination="bCk-Rm-UW2" name="selectedLabel" keyPath="values.temperatureUnits" id="Say-Cq-ahA"/>
+                        </connections>
+                    </segmentedControl>
+                    <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4zM-HL-tAt">
+                        <rect key="frame" x="18" y="93" width="424" height="24"/>
+                        <sliderCell key="cell" alignment="left" minValue="1" maxValue="5" doubleValue="1.5" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="c4W-sX-v8k"/>
+                        <connections>
+                            <binding destination="bCk-Rm-UW2" name="value" keyPath="values.updateFrequency" id="Hh9-Ht-VfJ"/>
+                        </connections>
+                    </slider>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="p9K-Pq-zn9">
+                        <rect key="frame" x="18" y="18" width="103" height="18"/>
+                        <buttonCell key="cell" type="check" title="Open at login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ghS-cC-Gqh">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="0cO-ht-wuY" name="value" keyPath="launchAtLogin" id="1cE-od-gFR"/>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="6Oc-Yu-dGD">
+                        <rect key="frame" x="18" y="38" width="144" height="18"/>
+                        <buttonCell key="cell" type="check" title="Show sensors menu" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6sU-f9-Geq">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="bCk-Rm-UW2" name="value" keyPath="values.showSensors" id="gb8-p5-Q1D"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="twr-dX-XB9">
+                        <rect key="frame" x="248" y="19" width="120" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Temperature Units:" id="yk6-fg-c93">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Toh-OX-gGR" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="2Rz-fH-zmp"/>
+                    <constraint firstAttribute="bottom" secondItem="twr-dX-XB9" secondAttribute="bottom" constant="19" id="7gm-ih-Mlc"/>
+                    <constraint firstItem="xa7-CN-vtQ" firstAttribute="top" secondItem="4zM-HL-tAt" secondAttribute="bottom" constant="2" id="7xh-tw-c2n"/>
+                    <constraint firstAttribute="trailing" secondItem="xa7-CN-vtQ" secondAttribute="trailing" constant="20" id="AVJ-2i-n3w"/>
+                    <constraint firstAttribute="trailing" secondItem="4zM-HL-tAt" secondAttribute="trailing" constant="20" id="AvJ-uh-lrD"/>
+                    <constraint firstAttribute="bottom" secondItem="p9K-Pq-zn9" secondAttribute="bottom" constant="20" id="Jxx-av-d6O"/>
+                    <constraint firstItem="p9K-Pq-zn9" firstAttribute="top" secondItem="6Oc-Yu-dGD" secondAttribute="bottom" constant="6" id="NJQ-ZV-X1B"/>
+                    <constraint firstAttribute="bottom" secondItem="Sxt-KV-Y8G" secondAttribute="bottom" constant="16" id="NZQ-Iy-bG0"/>
+                    <constraint firstItem="twr-dX-XB9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Oc-Yu-dGD" secondAttribute="trailing" constant="89" id="SMf-FD-Oax"/>
+                    <constraint firstItem="6Oc-Yu-dGD" firstAttribute="top" secondItem="nIa-s3-GD4" secondAttribute="bottom" constant="16" id="YBy-H4-OuS"/>
+                    <constraint firstItem="4zM-HL-tAt" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="Zc6-SB-GAB"/>
+                    <constraint firstItem="nIa-s3-GD4" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="aei-73-p8C"/>
+                    <constraint firstItem="nIa-s3-GD4" firstAttribute="top" secondItem="4zM-HL-tAt" secondAttribute="bottom" constant="10" id="eb2-O8-odn"/>
+                    <constraint firstItem="p9K-Pq-zn9" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="kL7-Af-aBf"/>
+                    <constraint firstItem="6Oc-Yu-dGD" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="r29-RX-qMB"/>
+                    <constraint firstItem="4zM-HL-tAt" firstAttribute="top" secondItem="Toh-OX-gGR" secondAttribute="bottom" constant="3" id="rWf-qV-QWW"/>
+                    <constraint firstItem="Sxt-KV-Y8G" firstAttribute="leading" secondItem="twr-dX-XB9" secondAttribute="trailing" constant="8" id="reg-Tx-qeI"/>
+                    <constraint firstItem="Toh-OX-gGR" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="sNh-2R-PjU"/>
+                    <constraint firstAttribute="trailing" secondItem="Sxt-KV-Y8G" secondAttribute="trailing" constant="20" id="sco-7g-2Zq"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="373" y="260.5"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="bCk-Rm-UW2"/>
+        <customObject id="0cO-ht-wuY" customClass="LaunchAtLoginController"/>
+    </objects>
+</document>

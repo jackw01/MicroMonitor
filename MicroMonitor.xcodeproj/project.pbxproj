@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044304982000964100A7C88D /* MMPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044304962000964000A7C88D /* MMPreferencesWindowController.m */; };
+		1D0885831B040262000FF758 /* MMAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0885811B040262000FF758 /* MMAboutWindowController.m */; };
+		1D0885841B040262000FF758 /* MMAboutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0885821B040262000FF758 /* MMAboutWindowController.xib */; };
+		1D0885901B052C1D000FF758 /* JJLevelIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D08858F1B052C1C000FF758 /* JJLevelIndicator.m */; };
+		1D2D2B561B068D9D00774B26 /* MMMemoryLevelIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D2B551B068D9D00774B26 /* MMMemoryLevelIndicator.m */; };
+		1D60979F1B0D18E800BD50E7 /* JJGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D60979E1B0D18E800BD50E7 /* JJGraphView.m */; };
+		1D8E59A91B38C4FE006AD0AF /* MMPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8E59A71B38C4FE006AD0AF /* MMPreferencesWindowController.xib */; };
+		1D8E59B21B39B9DF006AD0AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8E59B11B39B9DF006AD0AF /* CoreGraphics.framework */; };
+		1D8E59B61B39B9ED006AD0AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8E59B51B39B9ED006AD0AF /* QuartzCore.framework */; };
+		1D9AAA231B03D03E00225769 /* MMMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AAA221B03D03E00225769 /* MMMonitorViewController.m */; };
+		1D9AAA271B03F1BD00225769 /* MMContextualMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AAA261B03F1BD00225769 /* MMContextualMenuButton.m */; };
+		1DCC894D1B0812BC0015A4A9 /* JJGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC894C1B0812BC0015A4A9 /* JJGaugeView.m */; };
+		1DDC04871B03B25A008A4932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC04861B03B25A008A4932 /* AppDelegate.swift */; };
+		1DDC04891B03B25A008A4932 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDC04881B03B25A008A4932 /* Images.xcassets */; };
+		1DDC048C1B03B25A008A4932 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDC048A1B03B25A008A4932 /* MainMenu.xib */; };
+		1DDC04981B03B25A008A4932 /* MicroMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC04971B03B25A008A4932 /* MicroMonitorTests.swift */; };
+		1DDC04A41B03B753008A4932 /* MMMonitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDC04A21B03B753008A4932 /* MMMonitorViewController.xib */; };
+		1DDFABB61B06B53200B94F70 /* MMGlobalEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFABB51B06B53200B94F70 /* MMGlobalEventMonitor.swift */; };
+		1DF1A58B1B35EC910018FF10 /* JJCollapsingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1A58A1B35EC910018FF10 /* JJCollapsingTextField.m */; };
+		1DF1A5B91B3606280018FF10 /* MMSensorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1A5B71B3606280018FF10 /* MMSensorsViewController.m */; };
+		1DF1A5BA1B3606280018FF10 /* MMSensorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF1A5B81B3606280018FF10 /* MMSensorsViewController.xib */; };
+		1DF1A5C41B364D570018FF10 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1A5C31B364D570018FF10 /* LaunchAtLoginController.m */; };
+		1DF1A5C71B37637E0018FF10 /* MMSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1A5C61B37637E0018FF10 /* MMSensor.m */; };
+		1DFB2BB01B162CDB00507DC6 /* JJBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFB2BAF1B162CDB00507DC6 /* JJBox.m */; };
+		1DFB2BB71B1633EB00507DC6 /* JJDualGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFB2BB61B1633EB00507DC6 /* JJDualGraphView.m */; };
+		1DFEC3F31BD9B1E8006F4D6E /* SystemInfoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFEC3F21BD9B1E8006F4D6E /* SystemInfoKit.framework */; };
+		1DFEC3F41BD9B1E8006F4D6E /* SystemInfoKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1DFEC3F21BD9B1E8006F4D6E /* SystemInfoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DDC04921B03B25A008A4932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DDC04791B03B25A008A4932 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DDC04801B03B25A008A4932;
+			remoteInfo = MicroMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D8E59BF1B39BA5F006AD0AF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1DFEC3F41BD9B1E8006F4D6E /* SystemInfoKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF053B81B6AE9310041A60A /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		044304962000964000A7C88D /* MMPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPreferencesWindowController.m; sourceTree = "<group>"; };
+		044304972000964100A7C88D /* MMPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPreferencesWindowController.h; sourceTree = "<group>"; };
+		1D0885801B040262000FF758 /* MMAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAboutWindowController.h; sourceTree = "<group>"; };
+		1D0885811B040262000FF758 /* MMAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAboutWindowController.m; sourceTree = "<group>"; };
+		1D0885821B040262000FF758 /* MMAboutWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMAboutWindowController.xib; sourceTree = "<group>"; };
+		1D08858E1B052C1C000FF758 /* JJLevelIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLevelIndicator.h; sourceTree = "<group>"; };
+		1D08858F1B052C1C000FF758 /* JJLevelIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLevelIndicator.m; sourceTree = "<group>"; };
+		1D2D2B541B068D9D00774B26 /* MMMemoryLevelIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMemoryLevelIndicator.h; sourceTree = "<group>"; };
+		1D2D2B551B068D9D00774B26 /* MMMemoryLevelIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMemoryLevelIndicator.m; sourceTree = "<group>"; };
+		1D60979D1B0D18E800BD50E7 /* JJGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJGraphView.h; sourceTree = "<group>"; };
+		1D60979E1B0D18E800BD50E7 /* JJGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJGraphView.m; sourceTree = "<group>"; };
+		1D8E59A41B388EB8006AD0AF /* MMSensorType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSensorType.h; sourceTree = "<group>"; };
+		1D8E59A71B38C4FE006AD0AF /* MMPreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMPreferencesWindowController.xib; sourceTree = "<group>"; };
+		1D8E59B11B39B9DF006AD0AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D8E59B51B39B9ED006AD0AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1D9AAA211B03D03E00225769 /* MMMonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMonitorViewController.h; sourceTree = "<group>"; };
+		1D9AAA221B03D03E00225769 /* MMMonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMonitorViewController.m; sourceTree = "<group>"; };
+		1D9AAA241B03DAC000225769 /* MicroMonitor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MicroMonitor-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D9AAA251B03F1BD00225769 /* MMContextualMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMContextualMenuButton.h; sourceTree = "<group>"; };
+		1D9AAA261B03F1BD00225769 /* MMContextualMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMContextualMenuButton.m; sourceTree = "<group>"; };
+		1DCC894B1B0812BC0015A4A9 /* JJGaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJGaugeView.h; sourceTree = "<group>"; };
+		1DCC894C1B0812BC0015A4A9 /* JJGaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJGaugeView.m; sourceTree = "<group>"; };
+		1DDC04811B03B25A008A4932 /* MicroMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DDC04851B03B25A008A4932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MicroMonitor/Info.plist; sourceTree = "<group>"; };
+		1DDC04861B03B25A008A4932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DDC04881B03B25A008A4932 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1DDC048B1B03B25A008A4932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1DDC04911B03B25A008A4932 /* MicroMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DDC04961B03B25A008A4932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DDC04971B03B25A008A4932 /* MicroMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroMonitorTests.swift; sourceTree = "<group>"; };
+		1DDC04A21B03B753008A4932 /* MMMonitorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMMonitorViewController.xib; sourceTree = "<group>"; };
+		1DDFABB51B06B53200B94F70 /* MMGlobalEventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMGlobalEventMonitor.swift; sourceTree = "<group>"; };
+		1DF1A5891B35EC910018FF10 /* JJCollapsingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJCollapsingTextField.h; sourceTree = "<group>"; };
+		1DF1A58A1B35EC910018FF10 /* JJCollapsingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJCollapsingTextField.m; sourceTree = "<group>"; };
+		1DF1A5B61B3606280018FF10 /* MMSensorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSensorsViewController.h; sourceTree = "<group>"; };
+		1DF1A5B71B3606280018FF10 /* MMSensorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSensorsViewController.m; sourceTree = "<group>"; };
+		1DF1A5B81B3606280018FF10 /* MMSensorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSensorsViewController.xib; sourceTree = "<group>"; };
+		1DF1A5C21B364D570018FF10 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		1DF1A5C31B364D570018FF10 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
+		1DF1A5C51B37637E0018FF10 /* MMSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSensor.h; sourceTree = "<group>"; };
+		1DF1A5C61B37637E0018FF10 /* MMSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSensor.m; sourceTree = "<group>"; };
+		1DFB2BAE1B162CDB00507DC6 /* JJBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBox.h; sourceTree = "<group>"; };
+		1DFB2BAF1B162CDB00507DC6 /* JJBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBox.m; sourceTree = "<group>"; };
+		1DFB2BB51B1633EB00507DC6 /* JJDualGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDualGraphView.h; sourceTree = "<group>"; };
+		1DFB2BB61B1633EB00507DC6 /* JJDualGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDualGraphView.m; sourceTree = "<group>"; };
+		1DFEC3F21BD9B1E8006F4D6E /* SystemInfoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemInfoKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DDC047E1B03B25A008A4932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFEC3F31BD9B1E8006F4D6E /* SystemInfoKit.framework in Frameworks */,
+				1D8E59B61B39B9ED006AD0AF /* QuartzCore.framework in Frameworks */,
+				1D8E59B21B39B9DF006AD0AF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DDC048E1B03B25A008A4932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D08857D1B040079000FF758 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				1DDC048A1B03B25A008A4932 /* MainMenu.xib */,
+				1DDC04A21B03B753008A4932 /* MMMonitorViewController.xib */,
+				1DF1A5B81B3606280018FF10 /* MMSensorsViewController.xib */,
+				1D8E59A71B38C4FE006AD0AF /* MMPreferencesWindowController.xib */,
+				1D0885821B040262000FF758 /* MMAboutWindowController.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		1D08857E1B040087000FF758 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D9AAA251B03F1BD00225769 /* MMContextualMenuButton.h */,
+				1D9AAA261B03F1BD00225769 /* MMContextualMenuButton.m */,
+				1D2D2B541B068D9D00774B26 /* MMMemoryLevelIndicator.h */,
+				1D2D2B551B068D9D00774B26 /* MMMemoryLevelIndicator.m */,
+				1DFB2BB41B16325500507DC6 /* Controls */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1D08857F1B040092000FF758 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D9AAA211B03D03E00225769 /* MMMonitorViewController.h */,
+				1D9AAA221B03D03E00225769 /* MMMonitorViewController.m */,
+				1DF1A5B61B3606280018FF10 /* MMSensorsViewController.h */,
+				1DF1A5B71B3606280018FF10 /* MMSensorsViewController.m */,
+				044304972000964100A7C88D /* MMPreferencesWindowController.h */,
+				044304962000964000A7C88D /* MMPreferencesWindowController.m */,
+				1D0885801B040262000FF758 /* MMAboutWindowController.h */,
+				1D0885811B040262000FF758 /* MMAboutWindowController.m */,
+				1DF1A5C11B364D570018FF10 /* LaunchAtLoginController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1DA606051B07FF67001FAA6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D8E59A41B388EB8006AD0AF /* MMSensorType.h */,
+				1DF1A5C51B37637E0018FF10 /* MMSensor.h */,
+				1DF1A5C61B37637E0018FF10 /* MMSensor.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1DDC04781B03B25A008A4932 = {
+			isa = PBXGroup;
+			children = (
+				1DDC04831B03B25A008A4932 /* MicroMonitor */,
+				1DDC04941B03B25A008A4932 /* MicroMonitorTests */,
+				1DDC04821B03B25A008A4932 /* Products */,
+				1DDC04851B03B25A008A4932 /* Info.plist */,
+				3D04082A12B3CA7385B2F633 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DDC04821B03B25A008A4932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DDC04811B03B25A008A4932 /* MicroMonitor.app */,
+				1DDC04911B03B25A008A4932 /* MicroMonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DDC04831B03B25A008A4932 /* MicroMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				1DDC04861B03B25A008A4932 /* AppDelegate.swift */,
+				1DDFABB51B06B53200B94F70 /* MMGlobalEventMonitor.swift */,
+				1D9AAA241B03DAC000225769 /* MicroMonitor-Bridging-Header.h */,
+				1D08857F1B040092000FF758 /* Controllers */,
+				1D08857E1B040087000FF758 /* Views */,
+				1DA606051B07FF67001FAA6F /* Models */,
+				1D08857D1B040079000FF758 /* XIBs */,
+				1DDC04881B03B25A008A4932 /* Images.xcassets */,
+				1DDC04841B03B25A008A4932 /* Supporting Files */,
+			);
+			path = MicroMonitor;
+			sourceTree = "<group>";
+		};
+		1DDC04841B03B25A008A4932 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DDC04941B03B25A008A4932 /* MicroMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DDC04971B03B25A008A4932 /* MicroMonitorTests.swift */,
+				1DDC04951B03B25A008A4932 /* Supporting Files */,
+			);
+			path = MicroMonitorTests;
+			sourceTree = "<group>";
+		};
+		1DDC04951B03B25A008A4932 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DDC04961B03B25A008A4932 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DF1A5C11B364D570018FF10 /* LaunchAtLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				1DF1A5C21B364D570018FF10 /* LaunchAtLoginController.h */,
+				1DF1A5C31B364D570018FF10 /* LaunchAtLoginController.m */,
+			);
+			path = LaunchAtLoginController;
+			sourceTree = "<group>";
+		};
+		1DFB2BB41B16325500507DC6 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1DFB2BAE1B162CDB00507DC6 /* JJBox.h */,
+				1DFB2BAF1B162CDB00507DC6 /* JJBox.m */,
+				1DF1A5891B35EC910018FF10 /* JJCollapsingTextField.h */,
+				1DF1A58A1B35EC910018FF10 /* JJCollapsingTextField.m */,
+				1D08858E1B052C1C000FF758 /* JJLevelIndicator.h */,
+				1D08858F1B052C1C000FF758 /* JJLevelIndicator.m */,
+				1DCC894B1B0812BC0015A4A9 /* JJGaugeView.h */,
+				1DCC894C1B0812BC0015A4A9 /* JJGaugeView.m */,
+				1D60979D1B0D18E800BD50E7 /* JJGraphView.h */,
+				1D60979E1B0D18E800BD50E7 /* JJGraphView.m */,
+				1DFB2BB51B1633EB00507DC6 /* JJDualGraphView.h */,
+				1DFB2BB61B1633EB00507DC6 /* JJDualGraphView.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		3D04082A12B3CA7385B2F633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DFEC3F21BD9B1E8006F4D6E /* SystemInfoKit.framework */,
+				1D8E59B51B39B9ED006AD0AF /* QuartzCore.framework */,
+				1D8E59B11B39B9DF006AD0AF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DDC04801B03B25A008A4932 /* MicroMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DDC049B1B03B25A008A4932 /* Build configuration list for PBXNativeTarget "MicroMonitor" */;
+			buildPhases = (
+				1DDC047D1B03B25A008A4932 /* Sources */,
+				1DDC047E1B03B25A008A4932 /* Frameworks */,
+				1DDC047F1B03B25A008A4932 /* Resources */,
+				1D8E59BF1B39BA5F006AD0AF /* CopyFiles */,
+				1DF053B81B6AE9310041A60A /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicroMonitor;
+			productName = MicroMonitor;
+			productReference = 1DDC04811B03B25A008A4932 /* MicroMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DDC04901B03B25A008A4932 /* MicroMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DDC049E1B03B25A008A4932 /* Build configuration list for PBXNativeTarget "MicroMonitorTests" */;
+			buildPhases = (
+				1DDC048D1B03B25A008A4932 /* Sources */,
+				1DDC048E1B03B25A008A4932 /* Frameworks */,
+				1DDC048F1B03B25A008A4932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DDC04931B03B25A008A4932 /* PBXTargetDependency */,
+			);
+			name = MicroMonitorTests;
+			productName = MicroMonitorTests;
+			productReference = 1DDC04911B03B25A008A4932 /* MicroMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DDC04791B03B25A008A4932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "jBot-42";
+				TargetAttributes = {
+					1DDC04801B03B25A008A4932 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9QXY7Q8ZUL;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					1DDC04901B03B25A008A4932 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 1DDC04801B03B25A008A4932;
+					};
+				};
+			};
+			buildConfigurationList = 1DDC047C1B03B25A008A4932 /* Build configuration list for PBXProject "MicroMonitor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DDC04781B03B25A008A4932;
+			productRefGroup = 1DDC04821B03B25A008A4932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DDC04801B03B25A008A4932 /* MicroMonitor */,
+				1DDC04901B03B25A008A4932 /* MicroMonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DDC047F1B03B25A008A4932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDC04891B03B25A008A4932 /* Images.xcassets in Resources */,
+				1D8E59A91B38C4FE006AD0AF /* MMPreferencesWindowController.xib in Resources */,
+				1DF1A5BA1B3606280018FF10 /* MMSensorsViewController.xib in Resources */,
+				1D0885841B040262000FF758 /* MMAboutWindowController.xib in Resources */,
+				1DDC048C1B03B25A008A4932 /* MainMenu.xib in Resources */,
+				1DDC04A41B03B753008A4932 /* MMMonitorViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DDC048F1B03B25A008A4932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DDC047D1B03B25A008A4932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9AAA271B03F1BD00225769 /* MMContextualMenuButton.m in Sources */,
+				1DF1A5B91B3606280018FF10 /* MMSensorsViewController.m in Sources */,
+				1D2D2B561B068D9D00774B26 /* MMMemoryLevelIndicator.m in Sources */,
+				1DFB2BB71B1633EB00507DC6 /* JJDualGraphView.m in Sources */,
+				1D0885831B040262000FF758 /* MMAboutWindowController.m in Sources */,
+				1D0885901B052C1D000FF758 /* JJLevelIndicator.m in Sources */,
+				1DDC04871B03B25A008A4932 /* AppDelegate.swift in Sources */,
+				1DF1A5C41B364D570018FF10 /* LaunchAtLoginController.m in Sources */,
+				1DF1A58B1B35EC910018FF10 /* JJCollapsingTextField.m in Sources */,
+				1DF1A5C71B37637E0018FF10 /* MMSensor.m in Sources */,
+				1DCC894D1B0812BC0015A4A9 /* JJGaugeView.m in Sources */,
+				1DDFABB61B06B53200B94F70 /* MMGlobalEventMonitor.swift in Sources */,
+				1D60979F1B0D18E800BD50E7 /* JJGraphView.m in Sources */,
+				1D9AAA231B03D03E00225769 /* MMMonitorViewController.m in Sources */,
+				044304982000964100A7C88D /* MMPreferencesWindowController.m in Sources */,
+				1DFB2BB01B162CDB00507DC6 /* JJBox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DDC048D1B03B25A008A4932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDC04981B03B25A008A4932 /* MicroMonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DDC04931B03B25A008A4932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DDC04801B03B25A008A4932 /* MicroMonitor */;
+			targetProxy = 1DDC04921B03B25A008A4932 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DDC048A1B03B25A008A4932 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDC048B1B03B25A008A4932 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DDC04991B03B25A008A4932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DDC049A1B03B25A008A4932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		1DDC049C1B03B25A008A4932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QXY7Q8ZUL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = MicroMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(CONFIGURATION_BUILD_DIR) @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackw01.MicroMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "MicroMonitor/MicroMonitor-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1DDC049D1B03B25A008A4932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QXY7Q8ZUL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = MicroMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks $(CONFIGURATION_BUILD_DIR) @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackw01.MicroMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MicroMonitor/MicroMonitor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1DDC049F1B03B25A008A4932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MicroMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jrw01.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroMonitor.app/Contents/MacOS/MicroMonitor";
+			};
+			name = Debug;
+		};
+		1DDC04A01B03B25A008A4932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MicroMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jrw01.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroMonitor.app/Contents/MacOS/MicroMonitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DDC047C1B03B25A008A4932 /* Build configuration list for PBXProject "MicroMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DDC04991B03B25A008A4932 /* Debug */,
+				1DDC049A1B03B25A008A4932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DDC049B1B03B25A008A4932 /* Build configuration list for PBXNativeTarget "MicroMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DDC049C1B03B25A008A4932 /* Debug */,
+				1DDC049D1B03B25A008A4932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DDC049E1B03B25A008A4932 /* Build configuration list for PBXNativeTarget "MicroMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DDC049F1B03B25A008A4932 /* Debug */,
+				1DDC04A01B03B25A008A4932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DDC04791B03B25A008A4932 /* Project object */;
+}
