@@ -80,7 +80,7 @@
         [self updateLongTermStats];
         
         // Free up memory
-        [self freeUpMemory:self];
+        //[self freeUpMemory:self];
         
         // Init indicators
         

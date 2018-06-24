@@ -27,9 +27,6 @@
 
 - (void)windowDidLoad {
     [super windowDidLoad];
-    
-    // Set the background color of the window to white
-    self.window.backgroundColor = [NSColor whiteColor];
 }
 
 @end
