@@ -1,6 +1,9 @@
 # MicroMonitor
 Full-featured system monitoring menubar app for macOS with support for SMC sensors
 
+## Note
+As of 2019, MicroMonitor does not run on macOS Mojave and cannot be compiled in the current version of Xcode.
+
 ### Features:
 * CPU, memory, disk, and network usage monitoring
 * Temperature, fan speed, voltage, current, and power usage monitoring
@@ -10,6 +13,6 @@ Full-featured system monitoring menubar app for macOS with support for SMC senso
 * Lightweight app with low CPU and memory usage
 * Works on every Intel Mac with macOS 10.10 or newer
 
-Note: MicroMonitor is not under active development (I finished it over a year ago but have not released it until now) and is unlikely to be updated in the future unless updates are necessary to ensure compatibility with new versions of macOS. 
+Note: MicroMonitor is not under active development and is unlikely to be updated in the future unless updates are necessary to ensure compatibility with new versions of macOS. 
 
 MicroMonitor is released under the GPL v3 license. Uses [SMCWrapper](https://github.com/FergusInLondon/SMCWrapper) by @FergusInLondon. 
