@@ -2,7 +2,9 @@
 Full-featured system monitoring menubar app for macOS with support for SMC sensors
 
 ## Note
-As of 2019, MicroMonitor does not run on macOS Mojave and cannot be compiled in the current version of Xcode.
+As of August 2019, MicroMonitor does not run on macOS Mojave and cannot be compiled in the current version of Xcode.
+
+As of August 2020, Apple appears to have flagged MicroMonitor as malware and blocks it from running on macOS Catalina.
 
 ### Features:
 * CPU, memory, disk, and network usage monitoring
